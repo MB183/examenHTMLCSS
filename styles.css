@@ -1,0 +1,232 @@
+
+/*  */
+
+@font-face{
+	font-family: "Montserrat-Medium";
+	src:url("police/Montserrat-Medium.otf");
+}
+
+html{
+	font-family: "Montserrat-Medium";
+}
+/* 6 carrés responsive */
+.cssGrid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 1fr;
+	grid-gap: 0.8em;
+	padding: 0.8em;
+	margin: 0 0 2em;
+}
+
+.cssGrid > div{
+	background: white;
+	overflow: auto;
+	min-width: 0;
+	padding: 1em;
+	max-width: 1200px;
+}
+.img{
+	width: 100%;
+	height: auto;
+}
+
+.box{
+	border:1px solid;
+	margin-bottom: auto;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	position: relative;
+}
+
+li{
+	list-style: none;
+}
+
+
+.titre{
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.textes{
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h1{
+	text-align: center;
+	padding: 50px;
+	color: #333333;
+	padding-top: 0;
+}
+
+.imgLogo{
+	width: 35px;
+	height: auto;
+}
+
+.menu{
+	color: #DEB887;
+	padding-left: 10px;
+	margin: 0;
+	font-size: 13px;
+	width: 150px;
+}
+
+.header .menu{
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.header{
+	padding-left: 250px;
+	padding-right: 250px;
+}
+
+.logo{
+	display: inline-block;
+	padding-left: 0;
+	padding-right: 40px;
+}
+
+.textsLogo{
+	padding-left: 0px;
+	display: inline-block;
+}
+
+.textsLogo .imgLogo{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.menuListe .menu{
+	text-align: center;
+}
+
+.menuListe{
+	padding: 0;
+	display: inline-block;
+}
+
+
+.content{
+	display: table-cell;
+	padding-left: 10px;
+}
+
+#contents .content{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.textsLogo{
+	text-align: center;
+	float: right;
+}
+
+.logo li{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.textsLogo li{
+	display: block;
+}
+
+.GW{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.gc{
+	font-size: 13px;
+}
+
+.menuListe{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-auto-rows: 1fr;
+	grid-gap: 0.3em;
+	padding: 0.3em;
+	margin: 0;
+}
+
+.menuListe > .menu{
+	overflow: auto;
+	min-width: 0;
+	padding: 0;
+	max-width: 1200px;
+}
+
+.breadcrumbs{
+	width: 980px;
+    margin: 10px auto 0;
+
+}
+
+.breadcrumbs li{
+	
+}
+ 
+.breadcrumbs ul {
+    display: table;
+    font-size: 13px;
+    padding-top: 10px;
+}
+ 
+.breadcrumbs ul li {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+    float: left;
+}
+
+.band{
+	background-color: #DEB887;
+}
+
+a:link{
+	text-decoration: none;
+	color: #333333;
+}
+
+@media (min-width: 481px) and (max-width: 2000px) {
+	.bars{
+		display: none;
+	}
+}
+ 
+@media screen and (max-width: 480px){
+	.menuListe{
+		width: 200px;
+		background-color:  #00CCCC;
+	}
+	.menu{
+		color: #333333;
+		justify-content: center;
+		margin: 10px;
+	}
+
+	.header{
+		padding: 0;
+	}
+
+	.bars{
+		width: 35px;
+		height: auto;
+	}
+
+	.box{
+		border:1px solid #440000;
+	}
+
+
+
+}
